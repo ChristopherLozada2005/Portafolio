@@ -15,16 +15,16 @@
       <span class="logo-icon">&lt;/&gt;</span> Christopher Lozada
     </div>
     <ul class="navbar-links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#competencias">Competencias</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="competencias.html">Competencias</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </nav>
 
   <header id="inicio" class="hero">
-    <section class="hero-content">
+    <section class="hero-content glass">
       <div class="hero-text">
         <h1>¡Hola! Soy <span class="highlight">Christopher Lozada Zarria</span></h1>
         <h2>Estudiante de Diseño y Desarrollo de Software – Tecsup</h2>
@@ -33,9 +33,9 @@
           <div class="stat"><span class="stat-number">3+</span><span class="stat-label">Años de experiencia</span></div>
           <div class="stat"><span class="stat-number">10+</span><span class="stat-label">Proyectos realizados</span></div>
         </div>
-        <a href="https://www.linkedin.com/in/christopher-lozada/" class="linkedin-btn" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/christopher-lozada/" class="linkedin-btn" target="_blank" rel="noopener">LinkedIn <i class="fab fa-linkedin"></i></a>
       </div>
-      <div class="hero-photo">
+      <div class="hero-photo animated-border">
         <div class="photo-bg"></div>
         <img src="Perfil.jpeg" alt="Christopher Lozada Zarria" class="profile-photo-large" />
       </div>
@@ -43,16 +43,19 @@
   </header>
 
   <main role="main">
-    <section id="sobre-mi" class="about-section">
+    <section id="sobre-mi" class="about-section glass slide-up">
       <h2>Sobre mí</h2>
       <p>Soy estudiante de Diseño y Desarrollo de Software en Tecsup, con una visión profesional que integra tecnología, propósito y ética. Me especializo en crear soluciones funcionales que también respondan a necesidades humanas y sociales.</p>
-      <p>A lo largo de mi formación, he desarrollado competencias en programación, diseño de interfaces, análisis funcional y metodologías ágiles, complementadas por habilidades interpersonales como la empatía, la comunicación efectiva y el pensamiento crítico.</p>
-      <p>Me motiva el aprendizaje continuo y el trabajo colaborativo, y busco que cada proyecto refleje no solo lo que sé hacer, sino quién soy como profesional: comprometido, reflexivo y orientado al impacto real.</p>
+      <div class="about-icons">
+        <i class="fa-solid fa-brain"></i>
+        <i class="fa-solid fa-users"></i>
+        <i class="fa-solid fa-code"></i>
+        <i class="fa-solid fa-lightbulb"></i>
+      </div>
     </section>
 
-    <section id="competencias" class="competencias-section">
-      <h2>Mapa de Competencias Profesionales</h2>
-      <p>Mi perfil profesional se construye sobre seis dimensiones clave que integran lo técnico con lo humano. Cada una refleja habilidades que he desarrollado a lo largo de mi formación, experiencia y autoconocimiento.</p>
+    <section id="competencias" class="competencias-section fade-in glass">
+      <h2>Competencias</h2>
       <div class="competencias-grid">
         <article class="competencia-card"><h3>Cognitivas</h3><ul><li>Pensamiento crítico</li><li>Evaluación de riesgos</li><li>Resolución de problemas complejos</li></ul></article>
         <article class="competencia-card"><h3>Sociales</h3><ul><li>Comunicación empática</li><li>Escucha activa</li><li>Networking profesional</li></ul></article>
@@ -67,17 +70,17 @@
       </div>
     </section>
 
-    <section id="proyectos" class="projects-section">
+    <section id="proyectos" class="projects-section glass fade-in">
       <h2>Proyectos destacados</h2>
       <div class="projects-grid">
-        <article class="project-card">
+        <article class="project-card slide-up">
           <img src="UnilinkImage.png" alt="UniLink" class="project-img" />
           <h3>UniLink</h3>
           <p>Red social académica para estudiantes de TECSUP. Desarrollada con React, Django, Spring Boot, Kotlin y MySQL. Facilita la creación de grupos por intereses, fomenta la colaboración y promueve el desarrollo interpersonal.</p>
           <p><strong>Rol:</strong> Fullstack Developer y Coordinador Scrum</p>
           <p><strong>Competencias aplicadas:</strong> liderazgo empático, integración tecnológica, comunicación efectiva.</p>
         </article>
-        <article class="project-card">
+        <article class="project-card slide-up delay-2">
           <img src="Trumontt.png" alt="Trumont eCommerce" class="project-img" />
           <h3>Trumont – Plataforma eCommerce (Pasantía)</h3>
           <p>Optimización de interfaz y experiencia de usuario para tienda virtual. Durante mi pasantía en Trumont, diseñé vistas responsivas, consumí servicios backend y apliqué buenas prácticas de desarrollo para mejorar la navegación y escalabilidad del sistema.</p>
@@ -87,20 +90,25 @@
       </div>
     </section>
 
-    <section id="contacto" class="contact-section">
+    <section id="contacto" class="contact-section glass fade-in">
       <h2>Contacto</h2>
-      <address>
-        Puedes escribirme a <a href="mailto:christopherlozada2005@gmail.com">christopherlozada2005@gmail.com</a>
-      </address>
-      <ul class="social-icons">
-        <li class="instagram"><i class="fab fa-instagram icon icon1"></i></li>
-        <li class="twitter"><i class="fab fa-twitter icon icon2"></i></li>
-        <li class="youtube"><i class="fab fa-youtube icon icon3"></i></li>
-        <li class="facebook"><i class="fab fa-facebook icon icon4"></i></li>
-      </ul>
+      <form class="contact-form" autocomplete="off">
+        <input type="text" class="input-field" placeholder="Tu nombre" required />
+        <input type="email" class="input-field" placeholder="Tu email" required />
+        <textarea class="input-field" rows="4" placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="button">Enviar mensaje</button>
+      </form>
+      <div class="social-icons">
+        <a href="https://github.com/ChristopherLozada2005" class="icon" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/christopher-lozada/" class="icon" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:christopherlozada2005@gmail.com" class="icon" title="Correo"><i class="fas fa-envelope"></i></a>
+      </div>
     </section>
   </main>
 
+  <footer>
+    <p>&copy; 2025 Christopher Lozada Zarria. Todos los derechos reservados.</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
