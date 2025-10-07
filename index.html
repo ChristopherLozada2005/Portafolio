@@ -11,95 +11,320 @@
 </head>
 <body>
   <nav class="navbar" role="navigation" aria-label="Menú principal">
-    <div class="navbar-logo">
-      <span class="logo-icon">&lt;/&gt;</span> Christopher Lozada
+    <div class="container">
+      <div class="navbar-logo">
+        <span class="logo-icon">&lt;/&gt;</span> Christopher Lozada
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-links">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#competencias" class="nav-link">Competencias</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
     </div>
-    <ul class="navbar-links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#competencias">Competencias</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
   </nav>
 
   <header id="inicio" class="hero">
-    <section class="hero-content">
+    <div class="hero-background">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+    </div>
+    <section class="hero-content glass">
       <div class="hero-text">
-        <h1>¡Hola! Soy <span class="highlight">Christopher Lozada Zarria</span></h1>
-        <h2>Estudiante de Diseño y Desarrollo de Software – Tecsup</h2>
-        <p class="hero-desc">Soy un futuro profesional con enfoque estratégico, ético y humano en el uso de la tecnología. Este espacio ha sido diseñado para presentar mi trayectoria, competencias y proyectos, integrando lo técnico con lo social.</p>
+        <h1>Hola, soy <span class="highlight">Christopher Lozada</span></h1>
+        <h2 class="typing-effect">Desarrollador Full Stack</h2>
+        <p class="hero-desc">Estudiante de Diseño y Desarrollo de Software en Tecsup, apasionado por crear soluciones tecnológicas con impacto social y enfoque ético.</p>
         <div class="hero-stats">
-          <div class="stat"><span class="stat-number">3+</span><span class="stat-label">Años de experiencia</span></div>
-          <div class="stat"><span class="stat-number">10+</span><span class="stat-label">Proyectos realizados</span></div>
+          <div class="stat">
+            <span class="stat-number" data-target="3">+2</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="10">+10</span>
+            <span class="stat-label">Proyectos realizados</span>
+          </div>
         </div>
-        <a href="https://www.linkedin.com/in/christopher-lozada/" class="linkedin-btn" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="hero-buttons">
+          <a href="#contacto" class="btn btn-primary">
+            <span>Contáctame</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/christopher-lozada/" class="btn btn-secondary" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </div>
       <div class="hero-photo">
-        <div class="photo-bg"></div>
-        <img src="Perfil.jpeg" alt="Christopher Lozada Zarria" class="profile-photo-large" />
+        <div class="photo-container">
+          <div class="photo-glow"></div>
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Perfil-amZIHiVOxp31pdzAkzpZHaJvSEiddi.jpeg" alt="Christopher Lozada Zarria" class="profile-photo" />
+          <div class="photo-border"></div>
+        </div>
       </div>
     </section>
   </header>
 
   <main role="main">
     <section id="sobre-mi" class="about-section">
-      <h2>Sobre mí</h2>
-      <p>Soy estudiante de Diseño y Desarrollo de Software en Tecsup, con una visión profesional que integra tecnología, propósito y ética. Me especializo en crear soluciones funcionales que también respondan a necesidades humanas y sociales.</p>
-      <p>A lo largo de mi formación, he desarrollado competencias en programación, diseño de interfaces, análisis funcional y metodologías ágiles, complementadas por habilidades interpersonales como la empatía, la comunicación efectiva y el pensamiento crítico.</p>
-      <p>Me motiva el aprendizaje continuo y el trabajo colaborativo, y busco que cada proyecto refleje no solo lo que sé hacer, sino quién soy como profesional: comprometido, reflexivo y orientado al impacto real.</p>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Conóceme</span>
+          <h2 class="section-title">Sobre mí</h2>
+        </div>
+        <div class="about-content glass">
+          <p class="about-text">Soy estudiante de Diseño y Desarrollo de Software en Tecsup, con una visión profesional que integra <strong>tecnología, propósito y ética</strong>. Me especializo en crear soluciones funcionales que también respondan a necesidades humanas y sociales.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>Pensamiento Crítico</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-users"></i>
+              <span>Trabajo en Equipo</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-code"></i>
+              <span>Desarrollo Full Stack</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Innovación</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="competencias" class="competencias-section">
-      <h2>Mapa de Competencias Profesionales</h2>
-      <p>Mi perfil profesional se construye sobre seis dimensiones clave que integran lo técnico con lo humano. Cada una refleja habilidades que he desarrollado a lo largo de mi formación, experiencia y autoconocimiento.</p>
-      <div class="competencias-grid">
-        <article class="competencia-card"><h3>Cognitivas</h3><ul><li>Pensamiento crítico</li><li>Evaluación de riesgos</li><li>Resolución de problemas complejos</li></ul></article>
-        <article class="competencia-card"><h3>Sociales</h3><ul><li>Comunicación empática</li><li>Escucha activa</li><li>Networking profesional</li></ul></article>
-        <article class="competencia-card"><h3>Personales</h3><ul><li>Perseverancia</li><li>Autonomía y autodidactismo</li><li>Meticulosidad y fiabilidad</li></ul></article>
-        <article class="competencia-card"><h3>Tecnológicas</h3><ul><li>Programación (Java, Python, TypeScript, JS)</li><li>Diseño UX/UI y prototipado en Figma</li><li>Bases de datos (PostgreSQL, MySQL)</li><li>Metodologías ágiles (Scrum)</li></ul></article>
-        <article class="competencia-card"><h3>Globales</h3><ul><li>Inglés intermedio</li><li>Adaptabilidad cultural</li><li>Participación en comunidades tecnológicas</li></ul></article>
-        <article class="competencia-card"><h3>Sostenibilidad</h3><ul><li>Enfoque ético en proyectos</li><li>Conciencia social</li><li>Responsabilidad profesional</li></ul></article>
-      </div>
-      <div class="competencias-reflejo">
-        <h4>¿Cómo se refleja esto en mi trabajo?</h4>
-        <p>Cada proyecto que desarrollo busca integrar estas competencias de forma coherente. No se trata solo de aplicar conocimientos, sino de construir soluciones que respondan a necesidades reales, con ética, propósito y colaboración.</p>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Habilidades</span>
+          <h2 class="section-title">Competencias</h2>
+        </div>
+        <div class="competencias-grid">
+          <article class="competencia-card glass">
+            <div class="card-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Cognitivas</h3>
+            <ul>
+              <li><i class="fas fa-check"></i> Pensamiento crítico</li>
+              <li><i class="fas fa-check"></i> Evaluación de riesgos</li>
+              <li><i class="fas fa-check"></i> Resolución de problemas complejos</li>
+            </ul>
+          </article>
+          <article class="competencia-card glass">
+            <div class="card-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Sociales</h3>
+            <ul>
+              <li><i class="fas fa-check"></i> Comunicación empática</li>
+              <li><i class="fas fa-check"></i> Escucha activa</li>
+              <li><i class="fas fa-check"></i> Networking profesional</li>
+            </ul>
+          </article>
+          <article class="competencia-card glass">
+            <div class="card-icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <h3>Personales</h3>
+            <ul>
+              <li><i class="fas fa-check"></i> Perseverancia</li>
+              <li><i class="fas fa-check"></i> Autonomía y autodidactismo</li>
+              <li><i class="fas fa-check"></i> Meticulosidad y fiabilidad</li>
+            </ul>
+          </article>
+          <article class="competencia-card glass">
+            <div class="card-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Tecnológicas</h3>
+            <ul>
+              <li><i class="fas fa-check"></i> Java, Python, TypeScript, JS</li>
+              <li><i class="fas fa-check"></i> Diseño UX/UI en Figma</li>
+              <li><i class="fas fa-check"></i> PostgreSQL, MySQL</li>
+              <li><i class="fas fa-check"></i> Metodologías ágiles (Scrum)</li>
+            </ul>
+          </article>
+          <article class="competencia-card glass">
+            <div class="card-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Globales</h3>
+            <ul>
+              <li><i class="fas fa-check"></i> Inglés intermedio</li>
+              <li><i class="fas fa-check"></i> Adaptabilidad cultural</li>
+              <li><i class="fas fa-check"></i> Comunidades tecnológicas</li>
+            </ul>
+          </article>
+          <article class="competencia-card glass">
+            <div class="card-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3>Sostenibilidad</h3>
+            <ul>
+              <li><i class="fas fa-check"></i> Enfoque ético en proyectos</li>
+              <li><i class="fas fa-check"></i> Conciencia social</li>
+              <li><i class="fas fa-check"></i> Responsabilidad profesional</li>
+            </ul>
+          </article>
+        </div>
+        <div class="competencias-reflejo glass">
+          <i class="fas fa-quote-left quote-icon"></i>
+          <h4>¿Cómo se refleja esto en mi trabajo?</h4>
+          <p>Cada proyecto que desarrollo busca integrar estas competencias de forma coherente. No se trata solo de aplicar conocimientos, sino de construir soluciones que respondan a necesidades reales, con ética, propósito y colaboración.</p>
+        </div>
       </div>
     </section>
 
     <section id="proyectos" class="projects-section">
-      <h2>Proyectos destacados</h2>
-      <div class="projects-grid">
-        <article class="project-card">
-          <img src="UnilinkImage.png" alt="UniLink" class="project-img" />
-          <h3>UniLink</h3>
-          <p>Red social académica para estudiantes de TECSUP. Desarrollada con React, Django, Spring Boot, Kotlin y MySQL. Facilita la creación de grupos por intereses, fomenta la colaboración y promueve el desarrollo interpersonal.</p>
-          <p><strong>Rol:</strong> Fullstack Developer y Coordinador Scrum</p>
-          <p><strong>Competencias aplicadas:</strong> liderazgo empático, integración tecnológica, comunicación efectiva.</p>
-        </article>
-        <article class="project-card">
-          <img src="Trumontt.png" alt="Trumont eCommerce" class="project-img" />
-          <h3>Trumont – Plataforma eCommerce (Pasantía)</h3>
-          <p>Optimización de interfaz y experiencia de usuario para tienda virtual. Durante mi pasantía en Trumont, diseñé vistas responsivas, consumí servicios backend y apliqué buenas prácticas de desarrollo para mejorar la navegación y escalabilidad del sistema.</p>
-          <p><strong>Rol:</strong> Frontend Developer</p>
-          <p><strong>Competencias aplicadas:</strong> diseño UX/UI, manejo de errores, trabajo colaborativo.</p>
-        </article>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Proyectos destacados</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass">
+            <div class="project-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/UnilinkImage-VcIFE6Hk4Y0fClmgmdHRMrscUuIjom.png" alt="UniLink" />
+              <div class="project-overlay">
+                <span class="project-tag">Full Stack</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>UniLink</h3>
+              <p>Red social académica para estudiantes de TECSUP. Desarrollada con React, Django, Spring Boot, Kotlin y MySQL. Facilita la creación de grupos por intereses, fomenta la colaboración y promueve el desarrollo interpersonal.</p>
+              <div class="project-meta">
+                <div class="meta-item">
+                  <i class="fas fa-user-tie"></i>
+                  <span>Fullstack Developer & Scrum Master</span>
+                </div>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Django</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">MySQL</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card glass">
+            <div class="project-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Trumontt-p7FfxVrK6zWaZopNb0IvWo6A6Wd3FF.png" alt="Trumont eCommerce" />
+              <div class="project-overlay">
+                <span class="project-tag">Frontend</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Trumont – Plataforma eCommerce</h3>
+              <p>Optimización de interfaz y experiencia de usuario para tienda virtual. Durante mi pasantía en Trumont, diseñé vistas responsivas, consumí servicios backend y apliqué buenas prácticas de desarrollo para mejorar la navegación y escalabilidad del sistema.</p>
+              <div class="project-meta">
+                <div class="meta-item">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Frontend Developer (Pasantía)</span>
+                </div>
+                <div class="project-tags">
+                  <span class="tag">UX/UI</span>
+                  <span class="tag">Responsive</span>
+                  <span class="tag">eCommerce</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="contacto" class="contact-section">
-      <h2>Contacto</h2>
-      <address>
-        Puedes escribirme a <a href="mailto:christopherlozada2005@gmail.com">christopherlozada2005@gmail.com</a>
-      </address>
-      <ul class="social-icons">
-        <li class="instagram"><i class="fab fa-instagram icon icon1"></i></li>
-        <li class="twitter"><i class="fab fa-twitter icon icon2"></i></li>
-        <li class="youtube"><i class="fab fa-youtube icon icon3"></i></li>
-        <li class="facebook"><i class="fab fa-facebook icon icon4"></i></li>
-      </ul>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hablemos</span>
+          <h2 class="section-title">Contacto</h2>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info glass">
+            <h3>¿Tienes un proyecto en mente?</h3>
+            <p>Estoy disponible para colaborar en proyectos interesantes y desafiantes. ¡Conectemos!</p>
+            <div class="contact-methods">
+              <a href="mailto:christopherlozada2005@gmail.com" class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span class="method-label">Email</span>
+                  <span class="method-value">christopherlozada2005@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/christopher-lozada/" class="contact-method" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                  <span class="method-label">LinkedIn</span>
+                  <span class="method-value">christopher-lozada</span>
+                </div>
+              </a>
+              <a href="https://github.com/ChristopherLozada2005" class="contact-method" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i>
+                <div>
+                  <span class="method-label">GitHub</span>
+                  <span class="method-value">ChristopherLozada2005</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form glass">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" class="input-field" placeholder="Tu nombre completo" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="input-field" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" class="input-field" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Enviar mensaje</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span>Christopher Lozada</span>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/ChristopherLozada2005" class="social-icon" title="GitHub" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/christopher-lozada/" class="social-icon" title="LinkedIn" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:christopherlozada2005@gmail.com" class="social-icon" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Christopher Lozada Zarria. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
